@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <EditText
+        android:id="@+id/translate"
+        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:background="@drawable/drawable_rectangle"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Введите текст..."
+        android:inputType="textMultiLine"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/translateItog"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_rectangle"
+        android:breakStrategy="high_quality"
+        android:freezesText="false"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:scrollbars="vertical"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translate" />
+
+    <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/setting250px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
