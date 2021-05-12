@@ -40,7 +40,7 @@ public class FragmentSetting extends Fragment {
         btnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
+                FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.homeLayout, new FragmentChangeAccount());
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
