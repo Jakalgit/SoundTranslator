@@ -65,7 +65,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/setting250px"
+        android:src="@raw/setting250px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:clickable="true"

@@ -74,7 +74,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:src="@drawable/user100px"
+        android:src="@raw/user100px"
         app:layout_constraintBottom_toBottomOf="@+id/btnAcc"
         app:layout_constraintStart_toStartOf="@+id/btnAcc"
         app:layout_constraintTop_toTopOf="@+id/btnAcc" />
@@ -84,7 +84,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/user100px"
+        android:src="@raw/user100px"
         app:layout_constraintBottom_toBottomOf="@+id/btnAcc"
         app:layout_constraintEnd_toEndOf="@+id/btnAcc"
         app:layout_constraintTop_toTopOf="@+id/btnAcc" />
@@ -94,7 +94,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:src="@drawable/sett100px"
+        android:src="@raw/sett100px"
         app:layout_constraintBottom_toBottomOf="@+id/btnApp"
         app:layout_constraintStart_toStartOf="@+id/btnApp"
         app:layout_constraintTop_toTopOf="@+id/btnApp" />
@@ -104,16 +104,17 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/sett100px"
+        android:src="@raw/sett100px"
         app:layout_constraintBottom_toBottomOf="@+id/btnApp"
         app:layout_constraintEnd_toEndOf="@+id/btnApp"
         app:layout_constraintTop_toTopOf="@+id/btnApp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/btnBack1"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:src="@drawable/back100px"
+        android:layout_marginBottom="20dp"
+        android:src="@raw/back100px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

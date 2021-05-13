@@ -40,7 +40,7 @@ public class FragmentHome extends Fragment {
         btnSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
+                FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.homeLayout, new FragmentSetting());
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);

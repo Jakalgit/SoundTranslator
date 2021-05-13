@@ -19,7 +19,7 @@ public class FragmentSetting extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private Button btnAccount, btnApp;
+    private Button btnAccount, btnApp, btnBack;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,12 +37,25 @@ public class FragmentSetting extends Fragment {
         final View settingView = inflater.inflate(R.layout.fragment_setting, container, false);
 
         btnAccount = settingView.findViewById(R.id.btnAcc);
+        btnBack = settingView.findViewById(R.id.btnBack1);
+
         btnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.homeLayout, new FragmentChangeAccount());
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                ft.commit();
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.homeLayout, new FragmentHome());
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 ft.commit();
             }

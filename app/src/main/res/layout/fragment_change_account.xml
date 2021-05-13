@@ -25,7 +25,7 @@
         android:layout_width="321dp"
         android:layout_height="55dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/drawable_rectangle"
         android:ems="10"
         android:hint="Изменить адресс почты"
@@ -43,30 +43,11 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/chg100px"
+        android:src="@raw/chg100px"
         app:layout_constraintBottom_toBottomOf="@+id/edtEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/edtEmail"
-        app:srcCompat="@drawable/chg100px" />
-
-    <EditText
-        android:id="@+id/edtUsername"
-        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
-        android:layout_width="321dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/drawable_rectangle"
-        android:ems="10"
-        android:hint="Изменить имя пользователя"
-        android:inputType="textEmailAddress"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#212121"
-        android:textColorHint="#424242"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+        app:srcCompat="@raw/chg100px" />
 
     <EditText
         android:id="@+id/edtPassword"
@@ -74,47 +55,47 @@
         android:layout_width="321dp"
         android:layout_height="55dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/drawable_rectangle"
         android:ems="10"
         android:hint="Изменить пароль"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#212121"
         android:textColorHint="#424242"
         android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <ImageView
         android:id="@+id/chgUsername"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/chg100px"
-        app:layout_constraintBottom_toBottomOf="@+id/edtUsername"
+        android:src="@raw/chg100px"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edtUsername"
-        app:srcCompat="@drawable/chg100px" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:srcCompat="@raw/chg100px" />
 
     <ImageView
         android:id="@+id/chgPassowrd"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/chg100px"
+        android:src="@raw/chg100px"
         app:layout_constraintBottom_toBottomOf="@+id/edtPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/edtPassword"
-        app:srcCompat="@drawable/chg100px" />
+        app:srcCompat="@raw/chg100px" />
 
     <ImageView
         android:id="@+id/imgUser"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/account"
+        android:layout_marginTop="20dp"
+        android:src="@raw/account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,11 +106,68 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/back100px"
+        android:src="@raw/back100px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:clickable="true"
         android:focusable="true"/>
+
+    <Button
+        android:id="@+id/btnExist"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/drawable_register"
+        android:text="Выход"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/drawable_rectangle"
+        android:ems="10"
+        android:hint="Изменить имя пользователя"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColorHint="#424242"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
